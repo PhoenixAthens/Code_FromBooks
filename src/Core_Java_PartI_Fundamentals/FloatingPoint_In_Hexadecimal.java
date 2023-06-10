@@ -1,7 +1,7 @@
 package Core_Java_PartI_Fundamentals;
 import java.util.Formatter;
 public class FloatingPoint_In_Hexadecimal {
-    public static void main(String...args){
+    public static void main(String[] args){
         Formatter f=new Formatter();
         System.out.println(f.format("%a",0.125)); //%a represents Hexadecimal
         //When an uppercase specifier is used, then letters are shown in uppercase.
@@ -13,6 +13,7 @@ public class FloatingPoint_In_Hexadecimal {
         System.out.println(dog.equals(Double.NaN));//false;
         System.out.println(0.0==Double.NaN); //false
         System.out.println(Double.isNaN(0.12345678901234567890123456789012345678901234567890));//false
-
+        System.out.println(Double.isNaN(0.0/0)); //true
+        System.out.println((0.0/0)==Double.NaN);//false
     }
 }
