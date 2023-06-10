@@ -12,6 +12,7 @@ public class FloatingPoint_In_Hexadecimal {
         Double dog=0.0;
         System.out.println(dog.equals(Double.NaN));//false;
         System.out.println(0.0==Double.NaN); //false
+        System.out.println(Double.isNaN(0.12345678901234567890123456789012345678901234567890));//false
 
     }
 }
