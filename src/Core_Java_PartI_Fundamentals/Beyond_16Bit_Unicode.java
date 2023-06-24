@@ -8,5 +8,6 @@ public class Beyond_16Bit_Unicode {
         //What we have done is use two code units where first code unit lie btw
         //U+D800 to U+DBFF for the first code unit, U+DC00 to U+DFFF for the second code unit
         //Basically using the surrogate area
+
     }
 }
