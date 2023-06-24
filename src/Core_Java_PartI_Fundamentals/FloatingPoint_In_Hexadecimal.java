@@ -1,7 +1,9 @@
 package Core_Java_PartI_Fundamentals;
 import java.util.Formatter;
+import java.util.*;
 public class FloatingPoint_In_Hexadecimal {
-    public static void main(String[] args){
+    static public void main(String[] args){
+        /* \u000A is a newline*/
         Formatter f=new Formatter();
         System.out.println(f.format("%a",0.125)); //%a represents Hexadecimal
         //When an uppercase specifier is used, then letters are shown in uppercase.
