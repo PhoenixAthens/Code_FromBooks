@@ -18,6 +18,11 @@ public class Beyond_16Bit_Unicode {
         System.out.println(Character.isJavaIdentifierStart('1'));//identifier cannot start with a number
 
         System.out.println("What's thus: \u0090");
+        System.out.println(Math.log(64));
+        int val = 0x1D546;
+        System.out.println(val);
+        System.out.println("hello \u1D546");
+
 
 
 
