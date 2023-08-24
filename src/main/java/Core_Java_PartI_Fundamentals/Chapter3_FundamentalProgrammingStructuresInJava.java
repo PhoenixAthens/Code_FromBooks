@@ -63,5 +63,22 @@ public class Chapter3_FundamentalProgrammingStructuresInJava {
         System.out.println(x); //64
         System.out.println(y); //64
 
+        //Using switch statements with enumeration
+        enum Size{SMALL,MEDIUM,LARGE,EXTRA_LARGE};
+        Size itemSize_1 = Size.MEDIUM;
+        System.out.println(itemSize_1);
+        Size itemSize =Size.EXTRA_LARGE;
+        String label = switch(itemSize){ //has itemSize been `null` even default wouldn't have stopped the coming NPE.
+            case SMALL -> "S";
+            case MEDIUM -> "M";
+            case LARGE -> "L";
+            case EXTRA_LARGE -> "XL";
+            //default -> "OH NO";
+        };
+        System.out.printf("We got-> %s\n",label);
+
+
+
+
     }
 }

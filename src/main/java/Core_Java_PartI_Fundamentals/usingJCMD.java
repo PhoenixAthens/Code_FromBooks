@@ -11,5 +11,9 @@ public class usingJCMD {
         // jcmd <lvmid> help <command>
         //Testing JFR, with command
         //jcmd <lvmid> JFR.start name=demoA delay=2s duration=30s filename=usingJCMD_report.jfr
+
+        // Generating heap dump file and analysing it using jhat
+        // to generate a heap dump file using jmap
+        // jmap -dump:file=<fileName> <lvmid>
     }
 }
